@@ -104,3 +104,21 @@ class Person {
 }`
 
 ## [コンストラクタ]
+`void main() {
+  Person me = Person("Taro", 39);
+  me.say();
+  Person("Hanako", 28).say();
+}
+class Person {
+  String name = "";
+  int age = 0;
+  Person(this.name, this.age);
+  void say() {
+    print("Hi, I'm $name. I7m $age years old.");
+  }
+}`
+
+出力 → Hi, I'm Taro. I7m 39 years old.
+      Hi, I'm Hanako. I7m 28 years old.
+
+## [継承]
